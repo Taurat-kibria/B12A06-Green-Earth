@@ -29,13 +29,7 @@ function loadCard(id) {
         .then(data => displayCard(data.plants));
 }
 
-// lants": {
-// "id": 25,
-// "image": "https://i.ibb.co.com/svtZJ7nw/money-plant-min.jpg",
-// "name": "Money Plant",
-// "description": "A popular indoor climber believed to bring prosperity. Thrives easily in soil or water with minimal care.",
-// "category": "Climber",
-// "price": 350
+
 
 function loadCart(id) {
     fetch(`https://openapi.programming-hero.com/api/plant/${id}`)
@@ -78,14 +72,15 @@ function displayCard(plants) {
                     <div class=" bg-white h-full rounded-lg space-y-4 p-4">
                         <img class=" w-full  max-h-[200px]  
                          rounded-md" src="${element.image}" alt="no img">
-                        <p class="font-semibold text-xl ">${element.name}</p>
+                        <p onclick = "loadModal(${element.id})" class="font-semibold text-xl ">${element.name}</p>
 
                         <p class="text-[#57696c]">
                             ${element.description}
                         </p>
                         <div class="flex  justify-between">
                             <div>
-                                <button class="btn btn-xs sm:btn-sm md:btn-md
+                                <button id="modal_btn_id" 
+                                 class="btn btn-xs sm:btn-sm md:btn-md
                                 lg:btn-lg xl:btn-xl bg-[#dcfce7] rounded-full
                                 text-lg text-[#15803d] py-4 px-5 border-none h-8">
                                     ${element.category}
@@ -116,5 +111,34 @@ function displayCard(plants) {
 }
 
 
+// modal funtion
+function loadModal(id){
+    fetch(`https://openapi.programming-hero.com/api/plant/${id}`)
+    .then(res => res.json())
+    .then(data => displaModal(data.plants))
+}
+
+// lants": {
+// "id": 25,
+// "image": "https://i.ibb.co.com/svtZJ7nw/money-plant-min.jpg",
+// "name": "Money Plant",
+// "description": "A popular indoor climber believed to bring prosperity. Thrives easily in soil or water with minimal care.",
+// "category": "Climber",
+// "price": 350
+
+function displaModal(plants){
+
+    const modal = document.getElementById("modal_comp");
+    modal.innerHTML = "";
+    const div = document.createElement("div");
+    div.innerHTML = 
+        `
+        <h1 class = "text-2xl mb-5 font-bold">${plants.name}</h1>
+
+        <p class = "font-semibold">${plants.description}</p>
+        `
+        modal.appendChild(div)
+        document.getElementById("my_modal_5").showModal();
+}
 
 loadCatagories();
