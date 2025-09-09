@@ -111,29 +111,42 @@
             </div>
 
             <!-- card container section -->
-            <div id="card_container_id" class="card_section flex-[3]
-             grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div  class="card_section flex-[3]
+             ">
 
+             <div id="card_container_id" class="grid grid-cols-1 md:grid-cols-3  gap-4">
+
+             </div>
+
+                <!-- spinner section -->
+                <section id="spinner_id" class="hidden">
+                    <span class="loading loading-dots loading-xl "></span>
+
+                </section>
 
             </div>
 
             <!-- your cart section  -->
-            <div id="cart_id" class="flex-[1] bg-white rounded-xl p-4">
+            <div class="flex-[1] bg-white rounded-xl p-4">
                 <h1 class="font-semibold text-xl mb-3">
                     Your Cart
                 </h1>
 
+                <div id="cart_id" class="">
+
+                </div>
+
 
 
                 <!-- Total section -->
-                <div class="flex justify-between items-center mt-4 border-t
+                <div class=" flex justify-between items-center mt-4 border-t
                  border-[#57696c] font-semibold ">
                     <div>
                         <p>Total</p>
                     </div>
 
                     <div>
-                        <p>৳<span>1000</span></p>
+                        <p>৳<span id="total_id">0</span></p>
                     </div>
                 </div>
 
@@ -243,7 +256,7 @@
         </div>
     </section>
 
-    
+
     <!-- modal section -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -251,11 +264,11 @@
             <div id="modal_comp" class="space-y-3 py-4 px-3">
 
             </div>
-                <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
-                </form>
-            </div>
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+        </div>
         </div>
     </dialog>
 
