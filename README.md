@@ -1,4 +1,5 @@
 #### 1) What is the difference between var, let, and const?
+      Ans: var and let can be changed anywhere in the program under the scope of that variable. const cannot be changed
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
 
