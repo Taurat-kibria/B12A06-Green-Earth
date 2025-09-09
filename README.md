@@ -8,5 +8,7 @@
 ##### Ans: map(), filter(), forEach(), find().
 
 #### 4) How does destructuring assignment work in ES6?
+##### Ans: It helps to store the values of the keys in separate variables.
 
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
+##### Ans: template literals in ES6 uses backticks (``) instead of tradition double quatation(""). It also has a feature with which we can write javascript code inside it.
