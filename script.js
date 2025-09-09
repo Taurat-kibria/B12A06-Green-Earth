@@ -13,7 +13,7 @@ function displayCatagories(cats) {
 
         const newCat = document.createElement("div");
         newCat.innerHTML = `
-         <div onclick = "loadCard(${element.id})"
+         <div  onclick = "loadCard(${element.id})"
          class = "text-[#57696c] text-xl
          ">${element.category_name}</div>  
         `
@@ -83,7 +83,7 @@ function displayCard(plants) {
                         <p class="text-[#57696c]">
                             ${element.description}
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex  justify-between">
                             <div>
                                 <button class="btn btn-xs sm:btn-sm md:btn-md
                                 lg:btn-lg xl:btn-xl bg-[#dcfce7] rounded-full
