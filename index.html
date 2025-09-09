@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+
+    <!-- tailwind + daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#f0fdf4] w-[1920px] mx-auto">
+
+    <!-- nav bar -->
+    <nav class="max-w-[1920px] mx-auto bg-[#15803d] py-4">
+        <div class="nav_container flex flex-col md:flex-row
+         space-y-2 justify-evenly items-center">
+
+            <div class="text-white ">
+                <h1 class="text-2xl font-semibold">Green Earth</h1>
+            </div>
+
+            <div class="text-white">
+                <ul class="list-none ">
+                    <li class="inline mr-3">About<a href=""></a></li>
+                    <li class="inline mr-3">Gallery<a href=""></a></li>
+                    <li class="inline mr-3">Plant a Tree<a href=""></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button class="btn btn-xs sm:btn-sm md:btn-md 
+            lg:btn-lg xl:btn-xl bg-[#FACC15] rounded-full
+            text-lg text-[#15803d] py-3 px-5 border-none h-10">Responsive</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class=" max-w-[1920px] h-full mx-auto bg-[#cff0dc]">
+
+        <div class="banner_container flex flex-col md:flex-row
+           space-y-5 items-center ">
+            <div class="flex-1">
+                <img src="./assets/hero-leaf1.png" alt="">
+            </div>
+
+            <div class="flex-1 text-center space-y-4">
+                <h1 class="font-bold text-5xl ">
+                    Plant a Tree, Grow a Future
+                </h1>
+                <p class="text-[#57696c]">
+                    Join our mission to plant 1 million trees and make
+                    the Earth greener for future generations.
+                </p>
+
+                <button class="btn btn-xs sm:btn-sm md:btn-md 
+                    lg:btn-lg xl:btn-xl bg-[#FACC15] rounded-full
+                    text-lg text-[#15803d] py-3 px-5 border-none h-10">
+                    Get Involved
+                </button>
+            </div>
+
+            <div class="flex-1   relative bg-white">
+                <img class="absolute bg-blue-50 right-0 bottom-0" src="./assets/hero-leaf2.png" alt="">
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!--  diff section - 1 -->
+    <section class=" max-w-11/12 mx-auto my-[80px]">
+
+        <h1 class=" font-semibold text-3xl text-center mb-8">
+            Choose Your Trees
+
+        </h1>
+        <div class=" flex gap-8">
+
+            <!-- catagory section -->
+            <div id="cat_container" class="flex-[1] space-y-3">
+                <h1 class="font-semibold text-2xl">Catagories</h1>
+            </div>
+
+            <!-- card container section -->
+            <div id="card_container_id" class="card_section flex-[3]
+             grid grid-cols-3 gap-4">
+
+
+            </div>
+
+            <!-- your cart section  -->
+            <div id="cart_id" class="flex-[1] bg-white rounded-xl p-4">
+                <h1 class="font-semibold text-xl mb-3">
+                    Your Cart
+                </h1>
+
+                
+
+                <!-- Total section -->
+                <div class="flex justify-between items-center mt-4 border-t
+                 border-[#57696c] font-semibold ">
+                    <div>
+                        <p>Total</p>
+                    </div>
+
+                    <div>
+                        <p>৳<span>1000</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
