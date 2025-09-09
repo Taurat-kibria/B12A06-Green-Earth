@@ -5,6 +5,7 @@
 ##### Ans: map() returns a modified array after the function ends. forEach() loops through every element of an object does the operation and returns the output. filter() finds out elements from an object which satifies a specific condition.
 
 #### 3) What are arrow functions in ES6?
+##### Ans: map(), filter(), forEach(), find().
 
 #### 4) How does destructuring assignment work in ES6?
 
